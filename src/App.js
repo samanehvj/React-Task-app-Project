@@ -1,6 +1,8 @@
 import {useState} from 'react'
 import Header from './components/Header';
 import Tasks from './components/Tasks';
+import AddTask from './components/AddTask';
+
 
 
 function App() {
@@ -44,10 +46,16 @@ task.id === id ?{...task,reminder:!task.reminder} : task,
 ))
 }
 
+// save
+
+const addTask =(task) =>{
+  console.log(task)
+}
 
   return (
     <div className="container">
       <Header title = "Worker function"/>
+      <AddTask onAdd={AddTask}/>
       {tasks.length > 0 ? (
          <Tasks onToggle={toggleReminder}onDelete={deletTask} tasks={tasks}/>
       ):(
