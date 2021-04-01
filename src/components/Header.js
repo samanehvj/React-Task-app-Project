@@ -6,14 +6,16 @@ import Button from "./Button";
 
 
 const Header = (props) => {
+    const{title,onAdd,showAddForm} = props;
 
-    const onClick = () => {
-        console.log("clickk")
-    }
     return (
         <header className="header">
-        <h1>{props.title}</h1>
-        <Button onClick={onClick}/>
+        <h1>{title}</h1>
+        <Button 
+        onClick={onAdd}
+        text={showAddForm ? 'close' : 'Add'}
+        color={showAddForm ? 'red' : 'green'}
+         />
         </header>
     
     )
@@ -21,3 +23,5 @@ const Header = (props) => {
 
 
 export default Header;
+
+
