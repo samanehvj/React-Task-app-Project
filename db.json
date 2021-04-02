@@ -1,0 +1,22 @@
+{
+  "task": [
+    {
+      "id": 1,
+      "text": "Read book",
+      "day": "Monday",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Meet my bffs",
+      "day": "SAT",
+      "reminder": true
+    },
+    {
+      "text": "nnn",
+      "day": "nvbb",
+      "reminder": false,
+      "id": 3
+    }
+  ]
+}
