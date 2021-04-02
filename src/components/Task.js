@@ -8,7 +8,7 @@ const Task = ({task,onDelete,onToggle}) => {
          <h3> 
          {task.text}
         <FaTrash 
-         onClick={()=>onDelete(task.id)} 
+         onClick={()=>onDelete(task)} 
          style={{color:'red',size:20}}/>
          </h3>
          <p>{task.day}</p>
